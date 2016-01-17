@@ -35,4 +35,8 @@ exports.getProfiles = function (req, res, next) {
             }
         }
     }
+    res.json({
+        currentUser: currentUser,
+        friends: userProfiles
+    })
 };

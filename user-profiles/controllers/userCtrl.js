@@ -34,5 +34,8 @@ module.exports = {
                 }
             }
         }
+        if (i === users.length - 1) {
+            return res.json({ userFound: false });
+        }
     }
 };
